@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saksham Sharma — Data Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">S. Sharma</div>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <img src="assets/profile.jpg" alt="Saksham Sharma">
+  <div>
+    <h1>Saksham Sharma</h1>
+    <div class="role">Data Engineering · Stony Brook University</div>
+    <p class="intro">I build pipelines that turn messy, large-scale data — healthcare records, energy data, donor histories — into clean, reliable systems people can actually use.</p>
+    <div class="contact-line">
+      <a href="mailto:saksham.sharma@stonybrook.edu">saksham.sharma@stonybrook.edu</a>
+      <span>·</span>
+      <a href="https://linkedin.com/in/saksham-sharma275" target="_blank" rel="noopener">LinkedIn</a>
+      <span>·</span>
+      <a href="https://github.com/saksham" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="work" class="alt">
+  <h2>Selected work</h2>
+
+  <div class="case">
+    <div class="metric-box"><div class="metric">3B+</div><div class="metric-label">rows ingested</div></div>
+    <div>
+      <div class="meta">Data Management & Biomedical Data Analytics Lab — May 2026 to Present</div>
+      <h3>EHR star-schema pipeline</h3>
+      <p>Engineered an ETL pipeline ingesting 3B+ rows of Cerner Health Facts EHR data into a 7-table, 250GB star-schema MySQL database, with bulk-load optimization and foreign-key integrity validation. Mapped ICD-9 to ICD-10 diagnosis codes across 268M records via a 78K-row crosswalk table, enabling standardized clinical analytics.</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="metric-box"><div class="metric">95%</div><div class="metric-label">faster processing</div></div>
+    <div>
+      <div class="meta">Relevate Power — October 2025 to May 2026</div>
+      <h3>Hydropower data pipeline</h3>
+      <p>Collated and wrangled river flow and pricing history for 25 hydropower plants, cutting processing time by 95%. Built an Azure Data Factory ETL pipeline to store 10GB+ datasets for energy model training, and orchestrated Azure Functions with Power BI to deliver automated pricing reports that drove financial decisions.</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="metric-box"><div class="metric">100K+</div><div class="metric-label">donors scored</div></div>
+    <div>
+      <div class="meta">Stony Brook Foundation — August 2025 to May 2026</div>
+      <h3>Donor scoring & reporting dashboards</h3>
+      <p>Built an ELT pipeline scoring 100K+ donors on donation amount, frequency, and recency using multi-table joins and CTEs. Migrated performance reporting from Excel to Power BI, delivering automated dashboards to 100+ employees across 10 teams, and built dashboards to validate data integrity across ETL pipelines.</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="metric-box"><div class="metric">1M+</div><div class="metric-label">records processed</div></div>
+    <div>
+      <div class="meta">Personal project — June 2026 · Python, PostgreSQL, Google Gemini</div>
+      <h3>Natural language to SQL tool</h3>
+      <p>Built an end-to-end NL-to-SQL pipeline in Python, batch ingesting 1M+ weather records across 10 US cities into PostgreSQL. Engineered a schema extraction service that auto-generates a JSON data catalog from PostgreSQL's information schema to reduce LLM hallucination and improve SQL generation accuracy, and deployed a Flask web interface exposing the pipeline as a REST API.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="timeline-item">
+    <div class="timeline-head">
+      <h3>Research Assistant</h3>
+      <span class="timeline-date">Dec 2024 – Sept 2025</span>
+    </div>
+    <div class="timeline-org">Brookhaven National Laboratory</div>
+    <p>Developed Python pipelines for XAFS data retrieval, preprocessing, and exploratory analysis across 50+ datasets. Applied PCA and K-means clustering to uncover structural and bond-length patterns, achieving 80% clustering accuracy and contributing to a research publication submission.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-head">
+      <h3>Teaching Assistant — Introduction to Data Science</h3>
+      <span class="timeline-date">Aug – Dec 2025</span>
+    </div>
+    <div class="timeline-org">Stony Brook University</div>
+    <p>Led machine learning sessions with 150+ students in CSE 351 under Dr. Praveen Tripathi, and fostered collaborative learning during office hours with 50+ students through peer-led review sessions.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-head">
+      <h3>Database Maintenance Intern</h3>
+      <span class="timeline-date">Dec 2024 – Sept 2025</span>
+    </div>
+    <div class="timeline-org">Stony Brook University</div>
+    <p>Developed Python and SQL pipelines to automate data ingestion, validation, and maintenance for departmental databases, and built automated data quality and reconciliation workflows to ensure integrity across academic datasets.</p>
+  </div>
+
+</section>
+
+<section id="education" class="alt">
+  <h2>Education</h2>
+  <div class="edu-card">
+    <div>
+      <h3>Bachelor of Science in Computer Science</h3>
+      <div class="timeline-org">Stony Brook University, Stony Brook NY</div>
+    </div>
+    <div class="edu-meta">
+      <div class="metric small">3.56</div>
+      <div class="metric-label">CGPA · Dean's List · Expected May 2027</div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical skills</h2>
+  <div class="skill-groups">
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="skills-row">
+        <div class="skill-pill">Python</div><div class="skill-pill">SQL / PostgreSQL</div><div class="skill-pill">R</div><div class="skill-pill">Java</div><div class="skill-pill">C / C++</div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Data technologies</h4>
+      <div class="skills-row">
+        <div class="skill-pill">MySQL</div><div class="skill-pill">Azure Cloud</div><div class="skill-pill">Apache Airflow</div><div class="skill-pill">Astro</div><div class="skill-pill">SCADA</div><div class="skill-pill">Power BI</div><div class="skill-pill">Power Automate</div><div class="skill-pill">Tableau</div><div class="skill-pill">Salesforce</div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Developer tools</h4>
+      <div class="skills-row">
+        <div class="skill-pill">Git</div><div class="skill-pill">Docker</div><div class="skill-pill">tmux / screen</div><div class="skill-pill">Jupyter</div><div class="skill-pill">MS Office</div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Machine learning</h4>
+      <div class="skills-row">
+        <div class="skill-pill">pandas</div><div class="skill-pill">NumPy</div><div class="skill-pill">scikit-learn</div><div class="skill-pill">Selenium</div><div class="skill-pill">requests</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <h2>Get in touch</h2>
+  <p class="contact-text">I'm always open to discussing data engineering roles, internships, or interesting projects involving large-scale data pipelines.</p>
+  <div class="contact-buttons">
+    <a class="btn btn-primary" href="mailto:saksham.sharma@stonybrook.edu">Email me</a>
+    <a class="btn" href="https://linkedin.com/in/saksham-sharma275" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/saksham" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Saksham Sharma. Built with care.</p>
+</footer>
+
+</body>
+</html>
